@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8989
+
+spring:
+  zipkin:
+    base-url: http://localhost:9411       # 配置到链路服务器中
+
+  application:
+    name: service-miya
+

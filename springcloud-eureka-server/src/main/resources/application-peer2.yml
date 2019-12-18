@@ -1,0 +1,14 @@
+# 通过与application-peer1 结合实现注册中心高可用   还需要在host中配置，还有 service中的配置文件也需要更改
+# 127.0.0.1 peer1
+# 127.0.0.1 peer2
+server:
+  port: 8769
+
+spring:
+  profiles: peer2
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/

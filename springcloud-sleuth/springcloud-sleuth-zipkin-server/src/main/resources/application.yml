@@ -1,0 +1,30 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 9411
+spring:
+  application:
+    name: zipkin-server
+  sleuth:
+    enable: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zipkin?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root123
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+
+zipkin:
+  storage:
+    type: mysql
+      # 如果不指定连接哪个数据库，默认取本地zipkin数据库
+      #mysql:
+      # username: root
+      #password: root123

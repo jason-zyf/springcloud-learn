@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springcloud-learn</artifactId>
+        <groupId>cn.com.pci</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springcloud-sleuth</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>springcloud-sleuth-eureka-server</module>
+        <module>springcloud-sleuth-zipkin-server</module>
+        <module>springcloud-sleuth-user-service</module>
+        <module>springcloud-sleuth-gateway-service</module>
+        <module>springcloud-sleuth-hi-service</module>
+        <module>springcloud-sleuth-miya-service</module>
+    </modules>
+
+</project>
